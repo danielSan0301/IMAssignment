@@ -1,0 +1,30 @@
+{% extends "base_noauth.html" %}
+
+{% block title %}
+    <title>Verified</title>
+{% endblock %}
+
+{% block content %}
+    <h2>Welcome again</h2>
+    <h4>Please enter your username and password.</h4>
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+
+        <div>
+            {{ form.username.label_tag }}
+            {{ form.username }}
+            {{ form.username.errors }}
+        </div>
+
+        <div>        
+            {{ form.password.label_tag }}
+            {{ form.password }}
+            {{ form.password.errors }}
+        </div>
+
+        <p class = "texto-abajo">Don't have an account? <a href="/register" class="enlace">Register here</a></p>
+
+        <button type="submit" class="boton-abajo">Login</button>
+        <!-- <input type="hidden" name="next" value="{{ next }}"></button> -->
+    </form> 
+{% endblock %}

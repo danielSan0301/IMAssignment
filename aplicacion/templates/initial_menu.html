@@ -1,0 +1,17 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<head>
+    <title>Inicio</title>
+</head>
+
+<div>
+    <h2>Initial menu</h2>
+    <h4>Please, choose an option </h4>
+    <p>
+        <button onclick="window.location.href='accounts/login/?next=/postlogin'">Log in</button>
+        <button onclick="window.location.href='/register'">Register</button>
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,163 @@
+/* diseño del header */
+
+header {
+    position: relative;
+    background-color: #000000;
+    color: #ffffff;
+    display: flex;
+    width: 90%;
+    height: 10%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0 5%; 
+    
+}
+.contenedor {
+    display: flex; 
+}
+/* titulo del header */
+
+.titulo {
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    justify-content: center;
+    
+}
+/* boton del header */
+
+
+.boton-personalizado {
+    position: absolute;
+    top:10%;
+    bottom: 10%;
+    right: 5%;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    
+    align-self: center; /* Alinea verticalmente al centro */
+    white-space: nowrap; /* Todo el texto en una misma línea */;
+    padding: 20px 90px;
+    display:flex;
+    justify-content: flex-end;
+
+}
+
+.boton-personalizado:hover {
+   background-color: #cbcaca;
+    
+}
+
+.texto-boton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.qrcode {
+    max-width: 240px; /* Ajusta la altura máxima de la imagen según tus necesidades */
+    max-height: 240px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #cbcaca;
+    
+}
+
+div {
+    width: 80%;
+    margin: 10% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_general {
+    width: 60%;
+    margin: 5% auto;
+    padding: 2% 2%;
+    background-color: #000000;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor_especifico {
+    width: 90%;
+    margin: 5% auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 15px;
+    margin-left: 5%;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Cambia color del botón al ponerse encima */
+button:hover {
+    background-color: #555555;
+}
+
+.boton-abajo {
+    margin: auto;
+    display: block; /* Para centrarlo horizontalmente */
+    margin-top: 20px; /* Agrega un margen superior de 20px */
+    margin-bottom: 40px; /* Agrega un margen inferior de 20px */
+}
+
+.texto-abajo{
+    text-align: center;
+    color: #ffffff;   
+}
+
+.enlace {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.enlace:hover {
+    color: #cbcaca;
+    text-decoration: underline;
+}
+
+h2 {
+    color:#000000;
+    margin-left: 5%;
+}
+
+h4 {
+    color: #000000;
+    margin-left: 5%;
+}
+
+.white-text{
+    color: #ffffff;
+}

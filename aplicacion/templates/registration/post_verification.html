@@ -1,0 +1,22 @@
+{% extends "base_noauth.html" %}
+
+{% block title %}
+<title>Verification</title>
+{% endblock %}
+
+{% block content %}
+
+<h2>Mail verification</h2>
+<h4>Please, introduce the code that you have received in your mail.</h4>
+<form method="post" action="{% url 'verification' %}">
+    {% csrf_token %}
+        <div>
+            {{ form.secuence.label_tag }}
+            {{ form.secuence }}
+            {{ form.secuence.errors }}
+            <button type="submit" value="send code" class="boton-abajo">Send code</button>
+            
+        </div>
+        
+</form>
+{% endblock %}

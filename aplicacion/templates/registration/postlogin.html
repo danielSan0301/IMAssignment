@@ -1,0 +1,21 @@
+{% extends "base_noauth.html" %}
+
+{% block title %}
+<title>Post login</title>
+{% endblock %}
+
+{% block content %}
+
+<h2>Multifactor authentication</h2>
+<h4>Please scan the QR code that we have just send to your email account and enter the 6-digit sequence to verify your identity.</h4>
+<form method="post" action="{% url 'postlogin' %}">
+    {% csrf_token %}
+        <div>
+            <label for="fcode">Code:</label><br>
+            <input type="text" id="fcode" name="fcode" value=""><br>
+            <button type="submit" value="send code" class="boton-abajo">Enviar código</button>
+        </div>
+        
+</form>
+
+{% endblock %}

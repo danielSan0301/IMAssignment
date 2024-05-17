@@ -1,0 +1,14 @@
+{% extends "base_noauth.html" %}
+
+{% block title %}
+    <title>Verification error</title>
+{% endblock %}
+
+{% block additional %}
+    <meta http-equiv="refresh" content="5;url=/">
+{% endblock %}
+
+{% block content %}
+    <h2>Verification status</h2>
+    <h4>{{ error }}</h4>
+{% endblock %}

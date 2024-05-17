@@ -1,0 +1,27 @@
+{% extends 'base_generic.html' %}
+
+<head>
+    <title>Application</title>
+    
+</head>
+
+{% block content %}
+<html>
+
+<body>
+    <script src="/static/js/home.js"></script>
+    
+
+    <div>
+        <h2>Application page</h2>
+        <div>
+            <h3>Successful authentication</h3>
+            <p>Congratulations you have completed the multifactor authentication and therefore, you have accessed to the application.</p>            
+        </div>
+    </div>
+    <button class="boton-abajo" onclick="window.location.href='/logout_extension'">Log Out</button>
+
+</body>
+</html>
+
+{% endblock %}
